@@ -1,0 +1,28 @@
+.Card{
+    width: 300px;
+    height: 340px;
+    box-shadow: 0 0 10px red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0 0 2% 2%;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    /* background-image: url(https://images.unsplash.com/photo-1615292026763-3af006e59a67?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80); */
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.Card button{
+    padding: 5px 12px;
+    border-radius: 5px;
+    background-color: rgb(238, 102, 102);
+    border: none;
+    color: #fff
+}
