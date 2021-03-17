@@ -1,3 +1,5 @@
+import { PropTypes } from 'prop-types';
+
 import './Card.css';
 
 function Card(props) {
@@ -17,6 +19,12 @@ function Card(props) {
                 <button onClick={props.deleteCard} >Delete</button>
             </div>
         )
+}
+
+
+Card.propTypes = {
+    deleteCard: PropTypes.func,
+    card1: PropTypes.object
 }
     
     export default Card

@@ -5,8 +5,8 @@ import Form from './Components/Form/Form';
 
 
 const style ={
-  color: 'green',
-  backgroundColor: 'yellow'
+  color: 'gray',
+  // backgroundColor: 'yellow'
 }
 
 class App extends Component {
@@ -22,12 +22,16 @@ class App extends Component {
     let CopyCards = [...this.state.cards];
     CopyCards.push(newCard);    
     this.setState({cards: CopyCards});
+
   }
 
   onDeleteCard = (index) => {
     let CopyCards = [...this.state.cards];
     CopyCards.splice(index, 1);
     this.setState({cards: CopyCards});
+    // let CopyCards = this.state.cards.filter((c, i) => {
+    //   return i !== index; 
+    // })
   }
   
 

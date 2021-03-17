@@ -1,6 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { PropTypes } from 'prop-types';
 
 class Form extends Component {
+
+  static s = {
+    componentName: 'Form',
+    desc: 'Takes the input of Card'
+  }
+
+  
 
     state = {
         title: '',
@@ -29,6 +37,10 @@ class Form extends Component {
 
 
     render() {
+
+      console.log(this.props)
+      console.log(Form.s)
+
         return (
             <form onSubmit={this.OnSubmitHandler} >
         <input 
@@ -54,6 +66,15 @@ class Form extends Component {
       </form>
         )
     }
+}
+
+
+Form.propTypes = {
+  addCard: PropTypes.func
+}
+
+Form.defaultProps = {
+  data: 'This is fake prop'
 }
 
 export default Form;
